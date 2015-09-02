@@ -50,3 +50,5 @@ input[type="password"] {
 ```
 
 * [Check out the demo](http://mottie.github.io/input-password-bullet/) (reminder, this method only works in Webkit browsers)
+
+    ![password-input-typing](https://cloud.githubusercontent.com/assets/136959/9646930/d1b4e70c-519d-11e5-811a-57fea2b6519c.gif)
