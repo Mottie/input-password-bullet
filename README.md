@@ -1,16 +1,17 @@
 # Changing the input password bullet
 
-### This repo provides instructions & a simple demo showing how to replace the input password bullet in Webkit browsers.
+### This repo provides instructions & a simple demo showing how to replace the input password bullet in most browsers.
 
 * Go to [Fontello](http://fontello.com/), or equivalent site.
 * Choose or upload an icon.
 
-    ![fontello-select-glyph](https://cloud.githubusercontent.com/assets/136959/9632072/7b3650c6-514a-11e5-94ca-c41baf55c774.png)
+    ![fontello-select-glyph](images/Fontello-select-glyphs.png)
 
 * Select "Customize Codes" tab.
-* Change the glyph destination to U+"2022" to replace the bullet symbol.
+* Change the glyph destination to U+"2022" to replace the bullet symbol in webkit browsers.
+* Change the glyph destination to U+"25CF" to replace the bullet symbol in Firefox & MS Edge.
 
-    ![fontello-customize-code](https://cloud.githubusercontent.com/assets/136959/9632061/6cab24dc-514a-11e5-89b4-29043b6d781c.png)
+    ![fontello-customize-code](images/Fontello-customize-code.png)
 
 * Download webfont.
 * Include the font files on your site, and include the following css (Note, the `0000` will change depending on the glyph & glyph destination)
@@ -21,9 +22,10 @@
 	font-family: 'fontello';
 	src: url('./font/fontello.eot?0000');
 	src: url('./font/fontello.eot?0000#iefix') format('embedded-opentype'),
-	url('./font/fontello.woff?0000') format('woff'),
-	url('./font/fontello.ttf?0000') format('truetype'),
-	url('./font/fontello.svg?0000#fontello') format('svg');
+	     url('./font/fontello.woff2?0000') format('woff2'),
+	     url('./font/fontello.woff?0000') format('woff'),
+	     url('./font/fontello.ttf?0000') format('truetype'),
+	     url('./font/fontello.svg?0000#fontello') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -49,6 +51,7 @@ input[type="password"] {
 }
 ```
 
-* [Check out the demo](http://mottie.github.io/input-password-bullet/) (reminder, this method only works in Webkit browsers)
+* [Check out the demo](https://mottie.github.io/input-password-bullet/)
 
-    ![password-input-typing](https://cloud.githubusercontent.com/assets/136959/9646930/d1b4e70c-519d-11e5-811a-57fea2b6519c.gif)
+    ![password-typing-chrome](images/password-typing-chrome.gif)
+    ![password-typing-firefox](images/password-typing-firefox.gif)
